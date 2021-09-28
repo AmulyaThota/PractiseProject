@@ -48,4 +48,9 @@ public class DriverManager {
 		return webdriver.get();
 	}
 
+	public static void switchTo() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
