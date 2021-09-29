@@ -37,4 +37,10 @@ public class GenericMethods {
 	public static String getAttribute(WebElement ele,String attributeName) {
 		return ele.getAttribute(attributeName);
 	}
+	
+	public static void clickByJs(WebDriver driver,WebElement ele) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", ele);
+		
+	}
 }
